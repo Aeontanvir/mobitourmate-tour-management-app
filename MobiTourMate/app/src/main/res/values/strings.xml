@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mobi Tour Mate</string>
+
+
+    <!-- Theme -->
+    <string name="txtLogin">Login</string>
+    <string name="txtForgotPassword">Forgot password?</string>
+    <string name="txtSignUp">Sign Up</string>
+    <string name="txtCreateEvent">Create New Event</string>
+    <string name="txtCreateExpense">Add Expenses</string>
+
+    <string name="txtExpenseType">Expenses Type</string>
+    <string name="txtAmount">Amount</string>
+
+
+    <!-- create_event -->
+    <string name="txtDestination">Travel Destination</string>
+    <string name="txtEstBudget">Estimated Budget</string>
+    <string name="txtCreate">Create</string>
+    <string name="txtCancel">Cancel</string>
+    <string name="txtFromDate">From Date</string>
+    <string name="txtToDate">To Date</string>
+</resources>

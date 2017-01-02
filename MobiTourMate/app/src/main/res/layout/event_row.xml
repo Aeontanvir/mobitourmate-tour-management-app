@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6f000000"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="5dp">
+    <TextView
+        android:id="@+id/tvEventRowName"
+        android:text="Cox's Bazar"
+        android:textStyle="bold"
+        android:textSize="@dimen/tvBudgetRowFontSize"
+        android:textAlignment="center"
+        android:textColor="@color/colorETFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="To"
+                android:textStyle="bold"
+                android:textColor="@color/colorETFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvEventRowStart"
+                android:text="25-12-2016"
+                android:textColor="@color/colorETFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Form"
+                android:textStyle="bold"
+                android:textColor="@color/colorETFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvEventRowEnd"
+                android:text="25-12-2016"
+                android:textColor="@color/colorETFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvEventRowBudget"
+            android:text="Est Budget : 20000.00 "
+            android:textAlignment="center"
+            android:textColor="@color/colorETFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  />
+    </LinearLayout>
+
+</LinearLayout>

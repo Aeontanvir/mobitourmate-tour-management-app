@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBG"
+    android:orientation="vertical"
+    tools:context="aeontanvir.com.mobitourmate.RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_weight="3"
+            android:src="@drawable/applogo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:onClick="takePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_weight="3"
+            android:src="@drawable/demo_register_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+        <TextView
+            android:text="Select your profile picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <EditText
+            android:id="@+id/regEdtFullname"
+            android:hint="Full Name"
+            android:background="@color/colorETBG"
+            android:padding="@dimen/etPadding"
+            android:textColor="@color/colorETFont"
+            android:textColorHint="@color/colorETHint"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/etMarginBottom"/>
+        <EditText
+            android:id="@+id/regEdtUsername"
+            android:hint="Username"
+            android:background="@color/colorETBG"
+            android:padding="@dimen/etPadding"
+            android:textColor="@color/colorETFont"
+            android:textColorHint="@color/colorETHint"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/etMarginBottom"/>
+        <EditText
+            android:id="@+id/regEdtPassword"
+            android:hint="Password"
+            android:background="@color/colorETBG"
+            android:padding="@dimen/etPadding"
+            android:textColor="@color/colorETFont"
+            android:textColorHint="@color/colorETHint"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/etMarginBottom"/>
+        <EditText
+            android:id="@+id/regEdtPhoneNo"
+            android:hint="Emmergency Contact No"
+            android:background="@color/colorETBG"
+            android:padding="@dimen/etPadding"
+            android:textColor="@color/colorETFont"
+            android:textColorHint="@color/colorETHint"
+            android:layout_gravity="center"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/etMarginBottom"/>
+        <EditText
+            android:id="@+id/regEdtAddress"
+            android:hint="Address"
+            android:background="@color/colorETBG"
+            android:padding="@dimen/etPadding"
+            android:textColor="@color/colorETFont"
+            android:textColorHint="@color/colorETHint"
+            android:layout_gravity="center"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/etMarginBottom"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:onClick="submitUserInfo"
+                android:id="@+id/regBtnSignup"
+                android:text="@string/txtSignUp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

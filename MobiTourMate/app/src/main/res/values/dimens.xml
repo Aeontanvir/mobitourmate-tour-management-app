@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- Theme Dimension -->
+    <dimen name="etPadding">10dp</dimen>
+    <dimen name="etMarginBottom">10dp</dimen>
+    <dimen name="btnLoginMarginTop">10dp</dimen>
+    <dimen name="viewLineHeight">2dp</dimen>
+
+    <!-- row -->
+    <dimen name="tvBudgetRowFontSize">18sp</dimen>
+
+</resources>

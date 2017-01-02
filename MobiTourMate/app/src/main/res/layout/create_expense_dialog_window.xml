@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDialogBG"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/expnEdtName"
+        android:hint="@string/txtExpenseType"
+        android:textColorHint="@color/colorETHint"
+        android:background="@color/colorETBG"
+        android:textColor="@color/colorETFont"
+        android:padding="@dimen/etPadding"
+        android:layout_marginBottom="@dimen/etMarginBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/expnEdtAmount"
+        android:hint="@string/txtAmount"
+        android:textColorHint="@color/colorETHint"
+        android:background="@color/colorETBG"
+        android:textColor="@color/colorETFont"
+        android:padding="@dimen/etPadding"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="@dimen/etMarginBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/colorViewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewLineHeight"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/expnBtnAddExpense"
+            android:text="@string/txtCreateExpense"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/expnBtnCancel"
+            android:text="@string/txtCancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

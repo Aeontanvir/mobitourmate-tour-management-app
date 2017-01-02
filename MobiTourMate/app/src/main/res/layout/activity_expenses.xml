@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_expenses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBG"
+    android:orientation="vertical"
+    tools:context="aeontanvir.com.mobitourmate.ExpensesActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="10dp"/>
+        <ImageView
+            android:layout_weight="3"
+            android:src="@drawable/applogo"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/expnTvEvent"
+            android:text="Event : Cox's Bazar"
+            android:textSize="16sp"
+            android:textColor="@color/colorETFont"
+            android:textStyle="bold"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/expnTvBalance"
+            android:gravity="right"
+            android:text="Balance : 25000"
+            android:textSize="16sp"
+            android:textColor="@color/colorETFont"
+            android:textStyle="bold"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:background="#303F9F"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/colorETFont"
+            android:text="@string/txtCreateExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openCreateExpenseDialogWindow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:background="#4e000000"
+            android:id="@+id/listViewExpenseEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+
+</LinearLayout>
